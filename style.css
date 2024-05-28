@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:font-wght@300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+body{
+    background-color: black;
+    color: white;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.name{
+    font-size: 30px;
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    font-family: ;
+   
+}
+
+.name-col{
+    color: rgb(27, 136, 224);
+}
+
+.navbar a{
+    font-size: 15px;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    margin-left: 25px;
+    transition: .3s;
+}
+
+.navbar a:hover,
+.navbar a.active{
+    color: rgb(27, 136, 224);
+}
+
+#menu{
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+
+.Home{
+    height: 630px;
+    display: flex;
+    align-items: center;
+    padding:  10%;
+   /* background-color: green;*/
+}
+
+.content{
+    width: 600px;
+    height: 50%;
+   /* background-color: red;*/
+}
+
+.con-name{
+    color: rgb(27, 136, 224);
+}
+
+.content h1{
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 2;
+}
+
+#H-btn{
+    position: relative;
+    top: 1cm;
+    left: o.5cm;
+}
+
+/*.blob{
+    background-image: url(https://t3.ftcdn.net/jpg/06/96/11/58/360_F_696115884_rb4mj5dLyurP1NfQ1W5gOAGyAdlt8T8P.jpg);
+            width: 380px;
+            height: 380px;
+            background-position: center center;
+            box-shadow: 0 5px 5px 5px rgb(79, 79, 79);
+            animation: animate 5s ease-in-out infinite;
+            transition: all 1s ease-in-out;
+            margin: 2%;
+            border: 3px;
+            padding: 2%;
+    position: relative;
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    bottom: 170%;
+    left: 120%;
+
+    border: 3px solid black;
+    background-color: lightblue;
+} */
+
+@keyframes animate {
+
+    0%,
+    100% {
+        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    }
+
+    50% {
+        border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+    }
+}
+
+
+.pic{
+    background-image: url(https://t3.ftcdn.net/jpg/06/96/11/58/360_F_696115884_rb4mj5dLyurP1NfQ1W5gOAGyAdlt8T8P.jpg);
+            width: 300px;
+            height: 300px;
+            background-position: center center;
+            box-shadow: 0 5px 5px 5px rgb(79, 79, 79);
+            animation: animate 5s ease-in-out infinite;
+            transition: all 1s ease-in-out;
+            margin: 5%;
+            border: 3px;
+            padding: 5%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    top: 0;
+    right: 0;
+    width: 25%;
+    height: 70%;
+    background-color: green;
+    border: 2px solid red;
+}
