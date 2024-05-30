@@ -87,18 +87,6 @@ header {
     top: 1cm;
 }
 
-@keyframes animate {
-
-    0%,
-    100% {
-        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
-    }
-
-    50% {
-        border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
-    }
-}
-
 .pic {
     background-image: url(https://t3.ftcdn.net/jpg/06/96/11/58/360_F_696115884_rb4mj5dLyurP1NfQ1W5gOAGyAdlt8T8P.jpg);
     width: 300px;
@@ -121,6 +109,18 @@ header {
     height: 70%;
 }
 
+@keyframes animate {
+
+    0%,
+    100% {
+        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    }
+
+    50% {
+        border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+    }
+}
+
 .About {
     padding: 8% 10%;
     /* background-color: green;*/
@@ -131,7 +131,7 @@ header {
     text-decoration: ;
 }
 
-h2 {
+.About h2 {
     text-decoration: ;
     font-size: 35px;
     display: flex;
@@ -188,40 +188,157 @@ h2 {
     margin-top: 4%;
 }
 
-#Education {
-    padding: 8%;
+.Education h2 {
+    padding-top: 8%;
+    font-size: 35px;
+    font-weight: 800;
+    text-align: center;
 }
 
-.contents {
-    /* background-color: rgb(173, 169, 162); */
-    margin-top: 6%;
-    padding: 0 20% 0 20%;
-    border-left: 3px solid rgb(27, 136, 224);
-}
-
-.contents .box {
+.timeline {
     position: relative;
-    padding: 1% 5% 1% 5%;
-    border: 1px solid rgb(27, 136, 224);
+    max-width: 800px;
+    margin: 100px;
+}
+
+.Education .container {
+    padding: 0px 30px;
+    margin-top: -5%;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    /* background-color: red; */
+    animation: movedown 1s linear forwards;
+    opacity: 0;
+}
+
+@keyframes movedown {
+    0% {
+        opacity: 1;
+        transform: translate(-30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0px);
+    }
+}
+
+.Education .container:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.Education .container:nth-child(2) {
+    animation-delay: 2s;
+}
+
+.Education .container:nth-child(3) {
+    animation-delay: 4s;
+}
+
+.Education .text-box {
+    padding: 10px 10px 0 10px;
+    background: transparent;
+    position: relative;
+    border-radius: 10px;
+    font-size: 15px;
+    border: 1px solid rgba(27, 136, 224);
     background-color: transparent;
     cursor: pointer;
-    transition: all 0.4s;
+    transition: all 0.2s;
     margin-bottom: 4.5%;
 }
 
-.contents .box:hover {
-    box-shadow: 0 3px 12px 0 #68b0eb;
+.left-container {
+    left: -8%;
+}
+
+.right-container {
+    left: 58%;
+}
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    background-color: #fff;
+    top: 0;
+    left: 75%;
+    margin-left: -3px;
+    z-index: -1;
+    animation: moveline 6s linear forwards;
+
+}
+
+@keyframes moveline {
+    0% {
+        height: 0;
+    }
+
+    100% {
+        height: 100%;
+    }
+}
+
+.text-box h3 {
+    font-weight: 400;
+}
+
+.text-box small {
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.left-container-arrow {
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 28px;
+    z-index: 1;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 10px solid rgba(27, 136, 224);
+    right: -15px;
+
+}
+
+.right-container-arrow {
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 28px;
+    z-index: 1;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-right: 10px solid rgba(27, 136, 224);
+    left: -15px;
+
+}
+
+.Education .text-box:hover {
+    box-shadow: 2px 2px 4px 3px #68b0eb;
     border: 0.5px solid transparent;
 }
 
-.contents .box::before {
+.Education .text-box::before {
     content: "";
     position: absolute;
     width: 16px;
     height: 16px;
     border-radius: 50%;
-    right: calc(100% + 32.7%);
-    top: 0;
-    background-color: #11a372;
-    border: 2px solid white;
+    right: -20px;
+    top: 32px;
+    z-index: 10;
+    background-color: rgba(27, 136, 224);
+    border: 1px solid white;
+}
+
+.right-container .text-box::before {
+    left: -65px;
+}
+
+.left-container .text-box::before {
+    right: -61px;
 }
