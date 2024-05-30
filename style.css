@@ -364,7 +364,8 @@ header {
 }
 
 .row .col {
-    padding: 5%;
+    padding-top: 0.5%;
+    padding-inline: 5%;
     flex-basis: 50%;
     /* background-color: red;*/
 }
