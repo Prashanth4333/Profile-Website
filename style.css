@@ -762,7 +762,8 @@ button:hover {
 
             .Home p {
                 font-size: 13px;
-
+                text-align:initial;
+                margin-left: 3%;
             }
 
             .content p {
