@@ -750,7 +750,7 @@ button:hover {
 
         }
 
-        @media screen and (max-width: 376px) {
+        @media screen and (max-width: 375px) {
 
             .content h1 {
                 margin-top: 45%;
