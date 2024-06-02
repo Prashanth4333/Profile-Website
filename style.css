@@ -685,7 +685,7 @@ button:hover {
     .pic {
         width: 100px;
         height: 100px;
-        margin-top: 15%;
+        margin-top: 10%;
     }
 
     @media(max-width: 1280px) {
