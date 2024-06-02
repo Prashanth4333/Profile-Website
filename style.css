@@ -750,7 +750,7 @@ button:hover {
 
         }
 
-        @media screen and (max-width: 375px) {
+        @media screen and (max-width: 376px) {
 
             .content h1 {
                 margin-top: 45%;
@@ -762,8 +762,10 @@ button:hover {
 
             .Home p {
                 font-size: 13px;
-                text-align:initial;
+                text-align: initial;
                 margin-left: 3%;
+
+
             }
 
             .content p {
@@ -911,13 +913,17 @@ button:hover {
 
         }
 
-        @media screen and (max-width: 375px) {
+        @media screen and (max-width: 376px) {
             .Education h2 {
                 font-size: 30px;
             }
 
             .Education p {
                 font-size: 13px;
+            }
+
+            .Education .text-box::before {
+                left: -27.5%;
             }
         }
 
@@ -948,13 +954,19 @@ button:hover {
             }
         }
 
-        @media screen and (max-width: 375px) {
+        @media screen and (max-width: 376px) {
             .Skills .row h2 {
                 font-size: 30px;
             }
 
             .Skills .col .sub-title h2 {
                 font-size: 20px;
+            }
+
+            .container .row {
+                margin-left: 1%;
+                margin-right: 1%;
+                padding-right: 4%;
             }
         }
 
