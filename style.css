@@ -968,6 +968,11 @@ button:hover {
                 margin-right: 1%;
                 padding-right: 4%;
             }
+            .row .col {
+                padding-inline: 10%;
+                flex-basis: 30%;
+                /* background-color: red;*/
+           }
         }
 
 
