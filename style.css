@@ -416,8 +416,8 @@ img {
 
 .row .col {
     padding-top: 0.5%;
-    padding-inline: 5%;
-    flex-basis: 50%;
+    padding-inline: 3%;
+    flex-basis: 30%;
     /* background-color: red;*/
 }
 
